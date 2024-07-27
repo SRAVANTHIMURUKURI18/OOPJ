@@ -1,0 +1,31 @@
+import java.util.*;
+class Quad{
+public static void main(String args[]){
+double a;
+double b;
+double c;
+double root1;
+double root2;
+double d;
+System.out.println("ENTER A,B,C"); 
+Scanner sc = new Scanner(System.in);
+a=sc.nextDouble();
+b=sc.nextDouble();
+c=sc.nextDouble();
+d=b*b-4*a*c;
+
+if(d>0){
+root1=(-b+Math.sqrt(d))/(2*a); 
+root2=(-b-Math.sqrt(d))/(2*a); 
+System.out.println("ROOT1 is:"+root1);
+System.out.println("ROOT2 is:"+root2);
+}
+else if(d==0){
+root1=-b/(2*a);
+System.out.println("ROOT1=ROOT2="+root1);
+}
+else{
+System.out.println("IMAGINARY ROOTS");
+}
+}
+}   

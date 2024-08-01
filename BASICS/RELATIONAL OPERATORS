@@ -1,0 +1,18 @@
+import java.util.*;
+class Ao{
+public static void main(String args[]){
+int a;
+int b;
+Scanner sc=new Scanner(System.in);
+System.out.println("ENTER a AND b: ");
+a=sc.nextInt();
+b=sc.nextInt();
+System.out.println(a>b);
+System.out.println(a<b);
+System.out.println(a>=b);
+System.out.println(a<=b);
+System.out.println(a==b);
+System.out.println(a!=b);
+
+}
+}

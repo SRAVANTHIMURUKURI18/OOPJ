@@ -1,0 +1,18 @@
+class A{
+public void method(){
+System.out.println("Parent:My Method");
+}
+}
+class BB extends A{
+public void method(){
+System.out.println("Child:My Method2");
+}
+void display(){
+super.method();
+method();
+}
+public static void main(String args[]){
+BB obj=new BB();
+obj.display();
+}
+}

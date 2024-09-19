@@ -1,0 +1,14 @@
+class A{
+A(){
+System.out.println("Parent constructor");
+}
+}
+class AB extends A{
+AB(){
+super();
+System.out.println("Child constructor");
+}
+public static void main(String args[]){
+AB obj=new AB();
+}
+}

@@ -1,0 +1,11 @@
+class Ex{
+public static void main(String args[]){
+try{ 
+int a[]={1,18,33,41,17};
+System.out.println(a[7]);
+}
+catch(Exception e){
+System.out.println(e);
+}
+}
+}

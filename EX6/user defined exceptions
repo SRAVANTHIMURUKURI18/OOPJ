@@ -1,0 +1,19 @@
+import java.io.IOException;
+class E{
+public static void validate(int age) throws IOException{
+if(age<18){
+throw new ArithmeticException("not eligible");
+}else{
+System.out.println("Eligible");
+}
+}
+public static void main(String args[]){
+try{
+validate(18);
+validate(16);
+} 
+catch(IOException e){
+System.out.println(e);
+}
+}
+}
